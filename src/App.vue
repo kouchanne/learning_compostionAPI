@@ -1,9 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    ほぎぃ
+    {{state.test}}
   </div>
 </template>
+
+<script lang="ts">
+import { createComponent, reactive } from '@vue/composition-api'
+export default createComponent ({
+  setup() {
+    const state = reactive<{
+      test: string
+    }>({
+      test: "ほぎぃ"
+    })
+
+    return {
+      state
+    }
+  }
+})
+</script>
