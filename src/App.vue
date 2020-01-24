@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    ほぎぃ
     {{state.test}}
+    <router-view />
   </div>
 </template>
 
